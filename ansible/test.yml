@@ -1,0 +1,8 @@
+--- 
+- name: testing from job 2 
+  hosts: all
+  gather_facts: no
+  - tasks: 
+    - name: just check the login works 
+      ansible.builtin.debug:
+        var: playbook_dir
