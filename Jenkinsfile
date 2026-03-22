@@ -6,13 +6,6 @@ pipeline {
         IMAGE = "bindukumarm/php-app"
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-               git credentialsId: 'github', url: 'https://github.com/Bindukumar/assignment2.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t %IMAGE%:%BUILD_NUMBER% .'
