@@ -1,4 +1,2 @@
 README
-commit 1
-Testing this commit should triger job1 -> job2 -> job3
-Test 2 commit
+master vm has jenkins running http://20.193.153.121:8080/job/job-kubernetes
