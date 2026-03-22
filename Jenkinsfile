@@ -6,6 +6,8 @@ pipeline {
         IMAGE = "bindukumarm/php-app"
     }
 
+    stages {
+
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t %IMAGE%:%BUILD_NUMBER% .'
@@ -33,3 +35,4 @@ pipeline {
             }
         }
     }
+}
